@@ -15,3 +15,8 @@ demonstration, and verification instructions.
 
 [Lab 03](Lab03/README.md) contains the supplied generic stack, JUnit 5 tests,
 Maven run instructions, and the coverage review.
+
+## Lab 05: Exception handling
+
+[Lab 05](Lab05/README.md) contains custom exceptions, age validation, a wallet
+that transfers funds to a simulated bank account, and automated tests.

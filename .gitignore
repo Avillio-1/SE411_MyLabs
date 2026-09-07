@@ -26,6 +26,7 @@ replay_pid*
 # Lab build output and local tools
 Lab02/out/
 Lab03/target/
+Lab05/target/
 *.class
 .tools/
 
