@@ -24,6 +24,7 @@ hs_err_pid*
 replay_pid*
 
 # Lab build output and local tools
+Lab02/out/
 Lab03/target/
 *.class
 .tools/
