@@ -27,6 +27,8 @@ replay_pid*
 Lab02/out/
 Lab03/target/
 Lab05/target/
+Lab06/target/
+Lab06/logs/
 *.class
 .tools/
 

@@ -20,3 +20,8 @@ Maven run instructions, and the coverage review.
 
 [Lab 05](Lab05/README.md) contains custom exceptions, age validation, a wallet
 that transfers funds to a simulated bank account, and automated tests.
+
+## Lab 06: Logging with SLF4J
+
+[Lab 06](Lab06/README.md) contains the wallet logging exercise, file logging
+configuration, provider and level comparisons, and the applied AI logging review.
