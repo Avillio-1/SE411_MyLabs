@@ -1,0 +1,52 @@
+@baseUrl = http://localhost:8080
+
+### List the three seeded courses: 200
+GET {{baseUrl}}/api/v1/courses
+
+### Read a seeded course: 200
+GET {{baseUrl}}/api/v1/courses/1
+
+### Create: 201 and Location: /api/v1/courses/14
+POST {{baseUrl}}/api/v1/courses
+Content-Type: application/json
+
+{"id":14,"code":"SE414","name":"Web Services","description":"REST APIs","credits":3}
+
+### Read the newly created course: 200
+GET {{baseUrl}}/api/v1/courses/14
+
+### Duplicate ID: 422; existing course is unchanged
+POST {{baseUrl}}/api/v1/courses
+Content-Type: application/json
+
+{"id":14,"code":"OTHER","name":"Duplicate","description":"Must not overwrite","credits":4}
+
+### Update: 204, empty body
+PUT {{baseUrl}}/api/v1/courses/14
+Content-Type: application/json
+
+{"id":14,"code":"SE414","name":"Advanced Web Services","description":"Updated course","credits":4}
+
+### Confirm the update: 200
+GET {{baseUrl}}/api/v1/courses/14
+
+### Validation failure: 400
+POST {{baseUrl}}/api/v1/courses
+Content-Type: application/json
+
+{"id":-1,"code":"","name":"A","credits":11}
+
+### Delete: 204, empty body
+DELETE {{baseUrl}}/api/v1/courses/14
+
+### Deleted resource: 404
+GET {{baseUrl}}/api/v1/courses/14
+
+### Repeated deletion: 404
+DELETE {{baseUrl}}/api/v1/courses/14
+
+### Update missing resource: 404
+PUT {{baseUrl}}/api/v1/courses/14
+Content-Type: application/json
+
+{"id":14,"code":"SE414","name":"Missing Course","credits":3}
