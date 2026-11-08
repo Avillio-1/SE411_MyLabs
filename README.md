@@ -26,6 +26,12 @@ that transfers funds to a simulated bank account, and automated tests.
 [Lab 06](Lab06/README.md) contains the wallet logging exercise, file logging
 configuration, provider and level comparisons, and the applied AI logging review.
 
+## Lab 13: Spring Introduction
+
+[Lab 13](Lab13/README.md) contains the Spring Boot product API, an H2 database
+with 17 sample products, decimal-safe prices, positive-ID validation, integration
+tests, and a Postman collection.
+
 ## Lab 14: Spring CRUD
 
 [Lab 14](Lab14/README.md) contains the course REST API, Spring Data JDBC and H2
