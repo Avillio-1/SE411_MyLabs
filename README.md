@@ -31,3 +31,8 @@ configuration, provider and level comparisons, and the applied AI logging review
 [Lab 13](Lab13/README.md) contains the Spring Boot product API, an H2 database
 with 17 sample products, decimal-safe prices, positive-ID validation, integration
 tests, and a Postman collection.
+
+## Lab 14: Spring CRUD
+
+[Lab 14](Lab14/README.md) contains the course REST API, Spring Data JDBC and H2
+storage, input validation, HTTP examples, and 24 integration tests.
